@@ -71,7 +71,7 @@ def menu_plantas(conexao):
         elif op == "0":
             break
 
-def menu_motoristas(conexao): # Ajustado de Transportadoras para Motoristas igual ao SQL
+def menu_motoristas(conexao): 
     while True:
         limpar_tela()
         print("=== GERENCIAR MOTORISTAS ===")
@@ -120,7 +120,7 @@ def menu_hortifruti(conexao):
         if op == "1":
             nome = input("Nome do Hortifrúti: ")
             cnpj = input("CNPJ: ")
-            telefone = input("Telefone: ") # Batendo com a coluna telefone_hortifruti do seu SQL
+            telefone = input("Telefone: ") 
             crud.criar_hortifruti(conexao, nome, cnpj, telefone)
             pausar()
         elif op == "2":
