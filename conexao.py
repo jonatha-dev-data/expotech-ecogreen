@@ -5,9 +5,9 @@ def conectar():
     try:
         return mysql.connector.connect(
             host="localhost",
-            user="root",          # Usuário padrão do MySQL
-            password="root",      # Coloque aqui a senha do SEU MySQL (se não tiver senha, deixe vazio "")
-            database="agro_db"    # Conecta direto no banco que você já criou
+            user="root",          
+            password="root",      
+            database="agro_db"    
         )
     except mysql.connector.Error as err:
         print(f"Erro de Conexão: {err}")
