@@ -1,6 +1,3 @@
-# ==================== FUNÇÕES DO CRUD (VERSÃO MYSQL DIRECT) ====================
-
-# --- FAZENDAS ---
 def criar_fazenda(conexao, nome, estoque, cnpj):
     cursor = conexao.cursor()
     sql = """
@@ -35,8 +32,6 @@ def deletar_fazenda(conexao, id_fazenda):
     cursor.close()
     print(f" Fazenda ID {id_fazenda} removida do sistema!")
 
-
-# --- MOTORISTAS ---
 def criar_transportadora(conexao, nome, cnh, telefone):
     cursor = conexao.cursor()
     sql = """
@@ -71,8 +66,6 @@ def deletar_motorista(conexao, id_motorista):
     cursor.close()
     print(f'Motorista ID {id_motorista} removido do sistema')
 
-
-# --- HORTIFRUTI ---
 def criar_hortifruti(conexao, nome, cnpj, telefone):
     cursor = conexao.cursor()
     sql = """
@@ -107,8 +100,6 @@ def deletar_hortifruti(conexao, id_hortifruti):
     cursor.close()
     print(f'Hortifrúti ID {id_hortifruti} removido do sistema')
 
-
-# --- PLANTAS ---
 def criar_planta(conexao, nome, especie, id_fazenda):
     cursor = conexao.cursor()
     sql = """
@@ -144,7 +135,6 @@ def deletar_planta(conexao, id_planta):
     print(f'Planta ID {id_planta} removida do sistema')
 
 
-# --- SAFRAS ---
 def criar_safra(conexao, nome_safra, ano, semestre):    
     cursor = conexao.cursor()
     sql = """
@@ -179,8 +169,6 @@ def deletar_safra(conexao, id_safra):
     cursor.close()
     print(f'Safra ID {id_safra} removida do sistema')
 
-
-# --- ENVIOS ---
 def registrar_envio(conexao, id_f, id_h, id_m, id_p, id_s, qtd):
     cursor = conexao.cursor()
     sql = """
