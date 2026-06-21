@@ -18,5 +18,4 @@ Biblioteca : 'mysql-connector-python'
 - Thiago Carvalho do Nascimento
 - Luis Vitor da Conceição Silva
 - Jonatha Borges Felix
-- Thiago Carvalho do Nascimento
 - João Vitor Santos de Oliveira 
